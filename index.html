@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FMR - Design</title>
+
+    <!-- Logo icon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/icon/logo-fmrdesign.png">
+
+    <!--Style CSS -->
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <nav class="top-nav">
+            <a class="logo-nav" href="index.html">FMR<span class="sub-logo-nav">Design</span></a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about" id="navLink" onclick="showNav()">About</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#testimony">Testimony</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="login" target="_blank"><button class="button-login">Login</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Social Media -->
+        <aside id="about" class="side-about">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <h1 class="title-about">About</h1>
+            <p class="txt-about">Cras blandit interdum rutrum. Etiam metus tortor, hendrerit in porttitor nec, pharetra et velit. Suspendisse finibus sapien in nisl accumsan semper. Aenean et finibus nulla. Maecenas eget rutrum nulla. In hac habitasse platea dictumst. Fusce laoreet, libero id vestibulum pellentesque, velit augue pharetra leo, a sodales leo enim et massa. Aliquam pulvinar est et tellus mattis, eu dapibus tortor faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed sed iaculis mauris.</p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-whatsapp"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+        </aside>
+
+        <!-- Content -->
+        <article id="home">
+            <div class="flex-container-first">
+                <div class="flex-item">
+                    <h1 class="flex-txt-hero">Better Solution For Your Bussiness</h1>
+                    <h5 class="sub-txt-hero">We are team of talented designers making UI or UX Design for Website</h5>
+                   <a href="#project"><button class="button-hero">Get Started</button></a> 
+                </div>
+                <div class="flex-item">
+                    <img src="assets/img/hero/hero-img.svg" alt="hero image" class="hero-img">
+                </div>
+        </article>
+
+        <article id="project">
+            <h1 class="title-project">Project</h1>
+            <h5 class="subtitle-project">This portfolio from UI or UX Design</h5>
+            <div class="flex-container-second">
+                <div class="card-project">
+                    <img src="assets/img/project/design-first.jpg" alt="Design First" class="img-project">
+                    <h3 class="card-title">UI / UX Design Website Product</h3>
+                    <p class="card-description">"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
+                    <a href="#"><button class="card-link">More Info</button></a>
+                </div>
+                <div class="card-project">
+                    <img src="assets/img/project/design-second.jpg" alt="Design Second" class="img-project">
+                    <h3 class="card-title">UI Design Website Admin</h3>
+                    <p class="card-description">"Proin finibus dolor vitae tortor commodo accumsan. Proin facilisis volutpat quam nec auctor. Fusce varius dolor aliquet elementum faucibus."</p>
+                    <a href="#"><button class="card-link">More Info</button></a>
+                </div>
+                <div class="card-project">
+                    <img src="assets/img/project/design-third.jpg" alt="Design Third" class="img-project">
+                    <h3 class="card-title">UI Design Mockup</h3>
+                    <p class="card-description">"Aenean a volutpat mauris. Vivamus id mollis dui. Integer venenatis odio at risus rhoncus interdum. Ut pellentesque tortor lacus, id auctor tellus porta nec."</p>
+                    <a href="#"><button class="card-link">More Info</button></a>
+                </div>
+            </div>
+        </article>
+
+        <article id="testimony">
+            <h1 class="title-testimony">Testimonial</h1>
+            <h5 class="subtitle-testimony">This testimonial from All people</h5>
+            <div class="flex-container-third">
+                <div class="prev-slide"><i class="fa fa-chevron-circle-left fa-3x"></i></div>
+                <div class="slides">
+                    <p class="slide-items">Aenean rhoncus, nisi a blandit malesuada, mauris nisi laoreet sem, ullamcorper tincidunt purus ex nec lectus. Donec non massa sem. Mauris vel dignissim libero. Nulla eget rhoncus dui. Fusce mattis ligula et nisi iaculis, nec rhoncus risus imperdiet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    <p class="slide-name">Gojo Satorou</p>
+                    <p class="slide-star">
+                        <i class="fa fa-star fa-2x"></i>
+                        <i class="fa fa-star fa-2x"></i>
+                        <i class="fa fa-star fa-2x"></i>
+                        <i class="fa fa-star fa-2x"></i>
+                        <i class="fa fa-star fa-2x"></i>
+                    </p>
+                </div>
+                <div class="next-slide"><i class="fa fa-chevron-circle-right fa-3x"></i></div>
+            </div>
+        </article>
+
+        <article id="contact">
+            <h2 class="title-contact">Contact</h2>
+            <h5 class="subtitle-contact">This contact from FMR-Design</h5>
+            <div class="flex-container-fourth">
+                <div class="card-contact">
+                    <p class="item-contact"><i class="fa fa-globe fa-4x"></i></p>
+                    <p class="title-item-contact">Website</p>
+                    <a href="#" class="link-item-contact" target="_blank">fmr-design.co</a>
+                </div>
+
+                <div class="card-contact">
+                    <p class="item-contact"><i class="fa fa-phone fa-4x"></i></p>
+                    <p class="title-item-contact">Phone</p>
+                    <a href="#" class="link-item-contact" target="_blank">0852-3434-0042</a>
+                </div>
+
+                <div class="card-contact">
+                    <p class="item-contact"><i class="fa fa-envelope fa-4x"></i></p>
+                    <p class="title-item-contact">Email</p>
+                    <a href="#" class="link-item-contact" target="_blank">fmr@gmail.com</a> 
+                </div>
+
+                <div class="card-contact">
+                    <p class="item-contact"><i class="fa fa-map-marker fa-4x"></i></p>
+                    <p class="title-item-contact">Address</p>
+                    <a href="#" class="link-item-contact" target="_blank">Malang - Banyuwangi</a> 
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        Copyright &copy; <a class="footer-link" href="index.html">FMR-Design</a>  | 2021 - <script>
+            document.write(new Date().getFullYear());
+        </script>
+    </footer>
+    
+</body>
+
+    <!-- Custom JS -->
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</html>
