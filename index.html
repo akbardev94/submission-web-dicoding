@@ -10,6 +10,9 @@
 
     <!--Style CSS -->
     <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+   
+    <!-- Responsive CSS -->
+    <link type="text/css" rel="stylesheet" href="assets/css/responsive.css">
 
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,16 +23,24 @@
 
     <!-- Header Navigation -->
     <header>
-        <nav class="top-nav">
-            <a class="logo-nav" href="index.html">FMR<span class="sub-logo-nav">Design</span></a>
+        <nav>
+            <div><a class="logo-nav" href="index.html" target="_blank">FMR<span class="sub-logo-nav">Design</span></a></div>
+            
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about" id="navLink" onclick="showNav()">About</a></li>
                 <li><a href="#project">Project</a></li>
                 <li><a href="#testimony">Testimony</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#" class="login" target="_blank"><button class="button-login">Login</button></a></li>
             </ul>
+
+            <div class="menu-toggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
         </nav>
     </header>
 
@@ -40,14 +51,20 @@
         <aside id="about" class="side-about">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <h1 class="title-about">About</h1>
-            <p class="txt-about">Cras blandit interdum rutrum. Etiam metus tortor, hendrerit in porttitor nec, pharetra et velit. Suspendisse finibus sapien in nisl accumsan semper. Aenean et finibus nulla. Maecenas eget rutrum nulla. In hac habitasse platea dictumst. Fusce laoreet, libero id vestibulum pellentesque, velit augue pharetra leo, a sodales leo enim et massa. Aliquam pulvinar est et tellus mattis, eu dapibus tortor faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed sed iaculis mauris.</p>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-youtube"></a>
-            <a href="#" class="fa fa-whatsapp"></a>
-            <a href="#" class="fa fa-linkedin"></a>
-        </aside>
+            <div class="about-group">
+                <img src="assets/img/about/img-profil.jpg" class="img-profil" alt="Image Profil">
+                <p class="txt-about">Anas Maulana A.</p>
+                <p class="sub-txt-about">Email : <br> akbar.maulana449@gmail.com</p>
+            </div>
+            <div class="icon-group">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-whatsapp"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
+            </aside>
 
         <!-- Content -->
         <article id="home">

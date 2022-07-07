@@ -1,18 +1,10 @@
-// Smooth Scroll
-$(document).ready(function(){
-    $("a").on("click", function(event) {
-      if (this.hash !== "") {
-        event.preventDefault();
-        var hash = this.hash;
-        $("body").animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-          window.location.hash = hash;
-        });
-      } 
-    });
-  });
+//Responsive Bars
+const menuToggle = document.querySelector('.menu-toggle input');
+const navToggle = document.querySelector('nav ul')  
 
+menuToggle.addEventListener('click', function() {
+  navToggle.classList.toggle('menu')
+});
 
 // Sidebar About
 function showNav() {
@@ -29,5 +21,3 @@ if (!document.getElementById('about').contains(e.target) && !document.getElement
 function closeNav() {
   document.getElementById("about").style.width = "0";
 }
-
-// Testimony

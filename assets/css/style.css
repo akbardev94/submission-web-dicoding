@@ -3,50 +3,49 @@
 /* All */
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
-}
+    }
+
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    }
 
 /* Header Navigation*/
-.top-nav {
-    position: fixed;
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     background-color: #808582;
     box-shadow: 1px 1px 4px 0 #575c59;
-    width: 100%;
-    z-index: 1;
+    height: 4rem;
 }
 
 .logo-nav {
-    position: absolute;
+    position: relative;
     font-size: 1.8rem;
     font-weight: 800;
-    color: #FFFFFF;
+    color: #ffffff;
     text-decoration: none;
-    padding: 1rem;
-    margin-left: 1rem;
     letter-spacing: .3rem;
+    z-index: 3;
 }
 
 .sub-logo-nav {
     font-size: 1rem ;
     font-weight: 500;
-    color: #fdd66a;
-    text-decoration: none;
+    color: #ffe9ae;
     letter-spacing: normal;
 }
 
 nav ul {
-    display: block;
-    margin-left: 25rem;
-    padding: 0.5rem;
-}
-
-nav ul li {
-    display: inline-block;
+    display: flex;
     list-style: none;
-    margin: 1rem;
+    width: 40%;
+    justify-content: space-between;
 }
 
 nav ul li a {
@@ -54,36 +53,69 @@ nav ul li a {
     color: #FFFFFF;
 }
 
-nav ul li a:focus {
-    color: #f8990a;
-}
-
 nav ul li a:hover {
-    color: #fda622;
+    color: #f8c537;
 }
 
-.login {
-    margin-left: 12rem;
-}
 
-.button-login {
+/* Menu Toggle */
+.menu-toggle {
     position: relative;
-    margin-top: -1rem;
-    border: none;
-    padding: 0.3rem 2rem;
-    border-radius: 1rem;
-    cursor: pointer;
-    background-color: #fdcd2e;
-    color: #ffffff;
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
 }
 
-.button-login:hover {
-    background-color: #eec07a;
+.menu-toggle input {
+    position: absolute;
+    width: 38px;
+    height: 28px;
+    opacity: 0;
+    left: -5px;
+    top: -5px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+
+/* Menu Toggle Animation */
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    background-color: #ffffff;
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    background-color: #ffffff;
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
 }
 
 /* Content-first */
 
 .flex-container-first {
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -91,6 +123,7 @@ nav ul li a:hover {
     background-size: contain;
     width: 100%;
     height: 40rem;
+    z-index: -2;
 }
 
 .flex-item {
@@ -130,17 +163,19 @@ nav ul li a:hover {
 }
 
 .hero-img {
-    margin: 0rem 8rem 0rem 5rem;
-    width: 30rem;
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
 }
 
 /* Sidebar About */
 
 .side-about{
+    position: relative;
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     top: 0;
     left: 0;
     background-color: #fce686;
@@ -154,6 +189,13 @@ nav ul li a:hover {
     text-align: center;
 }
 
+.img-profil {
+    margin: 2rem 6rem 1rem 6rem;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 100%;
+}
+
 .side-about .closebtn {
     position: absolute;
     top: 0;
@@ -165,9 +207,15 @@ nav ul li a:hover {
 }
 
 .txt-about {
-    margin: 1rem 2rem 1rem 2rem;
+    margin: 0 2rem 2rem 2rem;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 1.5rem;
+}
+
+.sub-txt-about {
+    font-size: 1rem;
+    text-align: center;
+    margin:0 2rem 2rem 2rem;
 }
 
 .fa {
@@ -239,6 +287,8 @@ nav ul li a:hover {
 }
 
 .card-project {
+    display: grid;
+    grid-template-columns: repeat(3,1)fr;
     margin: 3rem 4rem 3rem 4rem;
     border-radius: 0.5rem;
     box-shadow: 0 4px 2px 0 #fda622;
@@ -456,46 +506,4 @@ footer {
     text-decoration: none;
     color: #000000;
     font-weight: 500;
-}
-
-
-
-/* Responsive */
-
-@media screen and ( max-width:768px ) {
-
-    .logo-nav {
-        position: absolute;
-        font-size: 1.8rem;
-        font-weight: 800;
-        color: #FFFFFF;
-        text-decoration: none;
-        padding: 0.5rem;
-        margin-left: 0.5rem;
-        letter-spacing: .3rem;
-    }
-    
-    .sub-logo-nav {
-        font-size: 1rem ;
-        font-weight: 500;
-        color: #ffc31e;
-        text-decoration: none;
-        letter-spacing: normal;
-    }
-
-    nav ul {
-        padding: 1rem;
-    }
-
-    nav ul li a {
-        display: none;
-    }
-
-    .flex-container {
-        flex-direction: column;
-    }
-
-    .login {
-        display: none;
-    }
 }
