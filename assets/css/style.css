@@ -6,7 +6,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
+    text-decoration: none;
+    scroll-behavior: smooth;;
     }
 
 body {
@@ -16,6 +17,7 @@ body {
 
 /* Header Navigation*/
 nav {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -117,7 +119,8 @@ nav ul li a:hover {
 .flex-container-first {
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+    align-content: space-around;
     flex-wrap: nowrap;
     background-color: azure;
     background-size: contain;
@@ -127,9 +130,10 @@ nav ul li a:hover {
 }
 
 .flex-item {
+    position: relative;
+    flex: 0 1 50%;
     margin-top: 10rem;
     align-items: center;
-    position: relative;
 }
 
 .flex-txt-hero {
@@ -164,17 +168,16 @@ nav ul li a:hover {
 
 .hero-img {
     width: 100%;
-    max-width: 30rem;
+    max-width: 35rem;
     height: auto;
 }
 
 /* Sidebar About */
 
 .side-about{
-    position: relative;
+    position: fixed;
     height: 100%;
     width: 0;
-    position: fixed;
     z-index: 5;
     top: 0;
     left: 0;
@@ -218,7 +221,7 @@ nav ul li a:hover {
     margin:0 2rem 2rem 2rem;
 }
 
-.fa {
+.bg-icon {
     padding: 20px;
     font-size: 30px;
     width: 50px;
@@ -229,6 +232,14 @@ nav ul li a:hover {
   
   .fa:hover {
       opacity: 0.7;
+  }
+
+  .icon-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 0 0 20%;
+    margin: 2rem 4rem 2rem 4rem;
   }
 
   .fa-facebook {
@@ -247,7 +258,7 @@ nav ul li a:hover {
   }
   
   .fa-instagram {
-    background: #125688;
+    background: #f836d8;
     color: white;
   }
 
@@ -266,11 +277,10 @@ nav ul li a:hover {
 .flex-container-second {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     background-color: #FFFFFF;
     background-size: contain;
     width: 100%;
-    height: 35rem;
 }
 
 .title-project {
@@ -287,14 +297,12 @@ nav ul li a:hover {
 }
 
 .card-project {
-    display: grid;
-    grid-template-columns: repeat(3,1)fr;
     margin: 3rem 4rem 3rem 4rem;
     border-radius: 0.5rem;
     box-shadow: 0 4px 2px 0 #fda622;
     transition: 0.3s;
     width: 20rem;
-    height: 28rem;
+    height: 29rem;
     background-size: cover;
 }
 
@@ -323,11 +331,12 @@ nav ul li a:hover {
 }
 
 .card-link {
+    display: flex;
     color: #ffffff;
     font-size: 1rem;
     font-weight: 400;
     text-decoration: none;
-    margin: 0 6rem 1rem 6rem;
+    margin: auto;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 2rem;
@@ -342,12 +351,14 @@ nav ul li a:hover {
 /* Content Third */
 .flex-container-third {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
     background-color: #c4c4c4c2;
     background-size: contain;
     width: 100%;
-    height: 35rem;
+    height: 38rem;
 }
 
 .title-testimony {
@@ -363,6 +374,7 @@ nav ul li a:hover {
     position: relative;
     display: flex;
     top: 6rem;
+    margin-bottom: 1rem;
     justify-content: center;
     font-size: 1rem;
     font-weight: 400;
@@ -401,7 +413,7 @@ nav ul li a:hover {
 
 .fa-star {
     color: #fda622;
-    margin: 0 -1rem 0 -1rem;
+    margin: auto;
 }
 
 .prev-slide, .next-slide {
@@ -415,11 +427,11 @@ nav ul li a:hover {
 .flex-container-fourth {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: #FFFFFF;
     background-size: contain;
     width: 100%;
-    height: 25rem;
 }
 
 .title-contact {
@@ -436,13 +448,14 @@ nav ul li a:hover {
 }
 
 .card-contact {
-    margin: 2rem 4rem 2rem 4rem;
+    margin: 3rem;
+    padding: 1.5rem;
     background-color: #fce686;
     border-radius: 0.5rem;
     box-shadow: 0 0 5px 0 #33302b;
     transition: 0.3s;
-    width: 12rem;
-    height: 18rem;
+    width: 15rem;
+    height: 20rem;
     background-size: cover;
 }
 
@@ -451,30 +464,26 @@ nav ul li a:hover {
 }
 
 .item-contact {
-    margin: 1rem 2.5rem 1rem 2.5rem;
+    display: flex;
+    justify-content: center;
+    margin: auto;
     border: none;
-    border-radius: 100%;
-    background-color: #2e3cfd;
 }
 
 .fa-globe {
-    color: #FFFFFF;
-    margin: 0 0.5rem 0 0.5rem;
+    color: #000000;
 }
 
 .fa-phone {
-    color: #FFFFFF;
-    margin: 0 0.5rem 0 0.5rem;
+    color: #000000;
 }
 
 .fa-envelope {
-    color: #FFFFFF;
-    margin: 0 0.5rem 0 0.5rem;
+    color: #000000;
 }
 
 .fa-map-marker {
-    color: #FFFFFF;
-    margin: 0 0.5rem 0 0.5rem;
+    color: #000000;
 }
 
 .title-item-contact {
@@ -493,6 +502,18 @@ nav ul li a:hover {
     font-weight: 500;
 }
 
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    font-size: 18px;
+    color: #ffda37;
+    cursor: pointer;
+    padding: 15px;
+  }
 
 /* Footer */
 
