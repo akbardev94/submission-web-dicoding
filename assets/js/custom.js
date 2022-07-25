@@ -14,7 +14,7 @@ function showNav() {
 window.addEventListener('click', function(e){   
 if (!document.getElementById('about').contains(e.target) && !document.getElementById('navLink').contains(e.target)){
 
-  document.getElementById('about').style.display = "none";
+  document.getElementById('about').style.display = "inline-block";
 }
 });
 

@@ -44,6 +44,106 @@
         transform: translateX(0);
     }
 
+    /* Sidebar About */
+
+.side-about{
+    position: fixed;
+    height: 100%;
+    width: 0;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: #fce686;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.title-about {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.img-profil {
+    margin: 2rem 6rem 1rem 6rem;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 100%;
+}
+
+.side-about .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+.txt-about {
+    margin: 0 2rem 2rem 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.sub-txt-about {
+    font-size: 1rem;
+    text-align: center;
+    margin:0 2rem 2rem 2rem;
+}
+
+.bg-icon {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 6px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .icon-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 0 0 20%;
+    margin: 2rem 7rem 2rem 7rem;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #f836d8;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa-whatsapp{
+    background-color: #04d36b;
+    color: #FFFFFF;
+  }
+
     /* Responsive Content First */
     .flex-container-first { 
         position: relative;
